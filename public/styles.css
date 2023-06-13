@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+body,
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ccc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000;
+  padding: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff
+}
+
+/* Container styles */
+.add-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.add-container label {
+  display: flex-start;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  border: 1px solid gray;
+  border-radius: 20px;
+  /* text-align: center; */
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.add-button {
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* List container styles*/
+.list-container {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  padding-left: 10px;
+  /* border: 1px solid black */
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.single-task {
+  flex-grow: 1;
+  font-size: 18px;
+  text-align: left;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.complete-button {
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #007aff;
+  margin-right: 5px;
+}
+
+.delete-button {
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #f56300;
+  margin-left: 5px;
+}
+
+
+.completed span {
+  text-decoration: line-through;
+}
+
+/* Responsive styles*/
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .add-container input[type="text"] {
+    width: 80%;
+  }
+
+  .add-button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 100vh;
+    align-items: stretch;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .complete-button, .delete-button {
+    margin-top: 5px;
+
+  }
+}
