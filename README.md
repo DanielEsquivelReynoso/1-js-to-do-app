@@ -1,0 +1,1 @@
+This project was a very quick exercise to show my ability to make a to-do application without using any frontend JavaScript frameworks. I specifically refrained from using jQuery and React while making this project as a way to test my understanding of pure JavaScript. 
