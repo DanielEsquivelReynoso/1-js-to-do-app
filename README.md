@@ -12,6 +12,6 @@ The overall app is responsive and adapts to a change in the window size.
 ## Functionality
 
 1. Add Task - Adds a task to the task list
-2. Complete Task - Shows task is completed by a strikethrough on the text of the task
-3. Delete Tasl - Removes task from the list
+2. Complete Task - Shows a task is completed by a strikethrough on the text of the task
+3. Delete Task - Removes task from the list
 
